@@ -35,7 +35,17 @@
 				"redhat.vscode-yaml",
 				"codezombiech.gitignore",
 				"Posit.shinyuieditor"
-			]
+			],
+			"settings": {
+				"editor.wordWrap": "on",
+				"editor.tabSize": 2,
+				"path-autocomplete.pathMappings": {
+						"/": "/",
+						"./": "${folder}"
+				},
+				"editor.bracketPairColorization.enabled": true,
+				"editor.guides.bracketPairs": "active"
+			}
 		}
 	}
 

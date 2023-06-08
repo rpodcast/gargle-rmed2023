@@ -10,9 +10,10 @@ box::use(
 
 # declare dependent functions
 box::use(
-  app/logic/gargledata
+  app/logic/gargledata[fetch_data]
 )
 
+#' @export
 transform_data <- function(data) {
   # extract PDF table of data dictionary PDF in docs folder PDF file
   # use that to add labels: https://www.pipinghotdata.com/posts/2022-09-13-the-case-for-variable-labels-in-r/

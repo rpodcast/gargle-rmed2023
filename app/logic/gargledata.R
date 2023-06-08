@@ -1,11 +1,11 @@
 box::use(
   reactable[reactable],
-  medicaldata
+  medicaldata[licorice_gargle]
 )
 
 #' @export
 fetch_data <- function() {
-  tibble::as_tibble(medicaldata$licorice_gargle)
+  tibble::as_tibble(licorice_gargle)
 }
 
 #' @export

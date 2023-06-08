@@ -11,6 +11,6 @@ create_demo_table <- function(demo_df) {
     add_layer(group_count(pain, by = "Pain")) |>
     add_layer(group_desc(age, by = "Age (years)"))
 
-  tdf_final <- build(tdf)
+  tdf_final <- build(tdf, metadata = TRUE)
   return(tdf_final)
 }
